@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suhrobjon Sodiqov — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div id="glow"></div>
+<nav>
+  <a class="logo" href="#home">&lt;SS<span>/</span>&gt;</a>
+  <div class="links">
+    <a href="#about" data-i18n="nav_about"></a>
+    <a href="#skills" data-i18n="nav_skills"></a>
+    <a href="#work" data-i18n="nav_work"></a>
+    <a href="#contact" data-i18n="nav_contact"></a>
+    <button id="lang" title="Language">UZ</button>
+    <button id="theme" title="Theme">◐</button>
+  </div>
+</nav>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <span class="tag"><i></i><span data-i18n="open"></span></span>
+    <h1><span data-i18n="hi"></span><br><em>Suhrobjon<br>Sodiqov</em></h1>
+    <p class="role">&gt; <span id="typed"></span><b class="cur">|</b></p>
+    <p class="lead" data-i18n="lead"></p>
+    <div class="cta">
+      <a class="btn p" href="#work" data-i18n="btn_work"></a>
+      <a class="btn" href="#contact" data-i18n="btn_contact"></a>
+    </div>
+  </div>
+  <div class="hero-pic">
+    <div class="ring"></div>
+    <img src="images/profile.jpg" alt="Suhrobjon Sodiqov">
+    <div class="chip c1">C++</div><div class="chip c2">Python</div><div class="chip c3">JS</div>
+  </div>
+</section>
+
+<div class="marq"><div id="mq"></div></div>
+
+<section id="about" class="two">
+  <div class="rv">
+    <h2 data-i18n="about_t"></h2>
+    <p class="lead" data-i18n="about_p"></p>
+    <div class="stats">
+      <div><b data-count="3">0</b><span data-i18n="s1"></span></div>
+      <div><b data-count="20">0</b><span data-i18n="s2"></span></div>
+      <div><b data-count="500">0</b><span data-i18n="s3"></span></div>
+    </div>
+  </div>
+  <div class="code rv">
+    <div class="tabs"><button class="on" data-tab="cpp">main.cpp</button><button data-tab="py">main.py</button></div>
+    <pre id="codeview"></pre>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="rv" data-i18n="skills_t"></h2>
+  <div class="bars rv">
+    <div><p>C++ <span>85%</span></p><div class="bar"><i data-w="85"></i></div></div>
+    <div><p>Python <span>90%</span></p><div class="bar"><i data-w="90"></i></div></div>
+    <div><p>JavaScript <span>75%</span></p><div class="bar"><i data-w="75"></i></div></div>
+    <div><p>HTML / CSS <span>90%</span></p><div class="bar"><i data-w="90"></i></div></div>
+  </div>
+</section>
+
+<section id="work">
+  <h2 class="rv" data-i18n="work_t"></h2>
+  <div class="grid">
+    <a class="card rv" href="#"><img src="images/project1.svg" alt=""><h3 data-i18n="p1t"></h3><p data-i18n="p1d"></p><small>JS · HTML · CSS</small></a>
+    <a class="card rv" href="#"><img src="images/project2.svg" alt=""><h3 data-i18n="p2t"></h3><p data-i18n="p2d"></p><small>C++</small></a>
+    <a class="card rv" href="#"><img src="images/project3.svg" alt=""><h3 data-i18n="p3t"></h3><p data-i18n="p3d"></p><small>Python</small></a>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="rv" data-i18n="contact_t"></h2>
+  <p class="lead rv" data-i18n="contact_p"></p>
+  <a class="mail rv" href="mailto:hello@example.com">hello@example.com</a>
+  <div class="soc rv">
+    <a class="btn" href="#">Telegram</a><a class="btn" href="#">GitHub</a><a class="btn" href="#">LinkedIn</a><a class="btn" href="#">Instagram</a>
+  </div>
+</section>
+</main>
+<footer>© <span id="y"></span> Suhrobjon Sodiqov · <span data-i18n="foot"></span></footer>
+<script src="js/lang.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
